@@ -1,0 +1,36 @@
+{
+  "name": "reviews_ratings_api",
+  "version": "1.0.0",
+  "description": "SDC Reviews API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "build": "psql -f schema.sql -p 5432 postgres"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Luxray/reviews_ratings_api.git"
+  },
+  "author": "Kevin Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Luxray/reviews_ratings_api/issues"
+  },
+  "homepage": "https://github.com/Team-Luxray/reviews_ratings_api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.3",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "nodemon": "^2.0.15"
+  }
+}

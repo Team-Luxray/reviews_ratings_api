@@ -44,7 +44,7 @@ CREATE TABLE characteristic_reviews (
 
 -- insert csv data into tables
 COPY reviews (id, product_id, rating, review_date, summary, body, recommend, reported, reviewer_name, reviewer_email, response, helpfulness)
-FROM '/home/ubuntu/SDC/data/reviews.csv'
+FROM '/home/ubuntu/data/reviews.csv'
 DELIMITER ','
 CSV HEADER;
 

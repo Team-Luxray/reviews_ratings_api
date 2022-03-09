@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js",
-    "build": "psql -f ./database/schema.sql -p 5432 postgres"
+    "build": "psql -f ./database/schema.sql -p 5432 postgres",
+    "k6": "k6 run spec/script.js"
   },
   "repository": {
     "type": "git",

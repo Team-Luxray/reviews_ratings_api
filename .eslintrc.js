@@ -5,8 +5,10 @@ module.exports = {
         "es2021": true
     },
     "extends": "eslint:recommended",
+    "parser": "babel-eslint",
     "parserOptions": {
-        "ecmaVersion": "latest"
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
     },
     "rules": {
     }

@@ -1,11 +1,20 @@
 const { Pool } = require('pg');
+import ('dotenv').config();
+
+// const pool = new Pool({
+//   host: 'localhost',
+//   port: 5432,
+//   user: 'postgres',
+//   password: '',
+//   database: 'reviews_api'
+// });
 
 const pool = new Pool({
-  host: 'localhost',
-  port: 5432,
-  user: 'postgres',
-  password: '',
-  database: 'reviews_api'
+  host: process.env.HOST || 'localhost',
+  port: process.env.PORT || 5432,
+  user: process.env.USER || 'postgres',
+  password: process.env.PASSWORD || '',
+  database: process.env.DATABASE || 'reviews_api'
 });
 
 module.exports = {

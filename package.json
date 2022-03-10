@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "build": "psql -f ./database/schema.sql -p 5432 postgres",
+    "build-ec2": "sudo -u postgres psql -f ./database/schema_aws.sql -p 5432 postgres",
     "k6": "k6 run spec/script.js"
   },
   "repository": {
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/Team-Luxray/reviews_ratings_api#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "morgan": "^1.10.0",
     "pg": "^8.7.3"

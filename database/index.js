@@ -1,5 +1,5 @@
 const { Pool } = require('pg');
-import ('dotenv').config();
+require('dotenv').config();
 
 // const pool = new Pool({
 //   host: 'localhost',
